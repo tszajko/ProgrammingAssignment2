@@ -2,23 +2,6 @@
 ## functions do
 
 ## Write a short comment describing this function
-
-makeCacheMatrix <- function(x = matrix()) {
-  im <- NULL
-  set <- function(y) {
-    x <<- y
-    im <<- NULL
-  }
-  get <- function() x
-  setInverse <- function(inverse) im <<- inverse
-  getInverse <- function() im
-  list(set = set,
-       get = get,
-       setInverse = setInverse,
-       getInverse = getInverse)
-}
-
-## Write a short comment describing this function
 ## The makeCacheMatrix follow the same logic as the vector-based example.
 ## The basic variable is "im" that refers to the inverted matrix. 
 
